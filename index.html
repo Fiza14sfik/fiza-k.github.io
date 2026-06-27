@@ -4,8 +4,8 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <meta name='theme-color' content='#070b1a'/>
-  <meta name='description' content='Portfolio of Fiza K – .NET Developer' />
-  <title>Fiza K • .NET Developer</title>
+  <meta name='description' content='Portfolio of Fiza K – .NET + AI Developer' />
+  <title>Fiza K • .NET + AI Developer</title>
   <link rel='preconnect' href='https://fonts.googleapis.com'>
   <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
   <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap' rel='stylesheet'>
@@ -64,6 +64,41 @@ section{padding:42px 0}
 .reveal{opacity:0;transform:translateY(18px) scale(.98);filter:blur(2px);transition:opacity .7s ease, transform .7s ease, filter .7s ease;transition-delay:var(--d,0ms)}
 .reveal.show{opacity:1;transform:none;filter:none}
 
+
+.lang-item {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.progress-value {
+  height: 100%;
+  width: 0;
+  background: var(--accent);
+  border-radius: 10px;
+  position: relative;
+  transition: width 1.5s ease;
+}
+
+.progress-value span {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-size: 12px;
+  background: #222;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 5px;
+}
+
+
 /* Neon icon bullets */
 ul.neon-icons{list-style:none;padding-left:1.9rem}
 ul.neon-icons li{position:relative;margin:.55rem 0}
@@ -80,6 +115,59 @@ ul.neon-icons li.ic-automation::before{content:"🔄"}
 ul.neon-icons li.ic-support::before{content:"🛡️"}
 ul.neon-icons li.ic-learning::before{content:"🧠"}
 ul.neon-icons li.ic-arch::before{content:"🧬"}
+
+
+.edu-card {
+  text-align: center;
+}
+
+.edu-loader {
+  margin: 15px auto 0;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 8px solid rgba(255,255,255,0.1);
+  border-top: 8px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: 0 0 12px rgba(0,229,255,0.4);
+}
+
+/* Education */
+
+.progress-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 20px auto;
+  background: conic-gradient(
+    var(--accent) 0deg,
+    rgba(255,255,255,0.1) 0deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0,229,255,0.4);
+}
+
+.progress-circle::before {
+  content: "";
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  background: var(--panel);
+  border-radius: 50%;
+}
+
+.progress-circle span {
+  position: relative;
+  font-weight: bold;
+  font-size: 16px;
+}
 
 /* Skills board */
 .skills-board{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
@@ -136,17 +224,17 @@ form.contact .full{grid-column:1/-1}
 
   <section class='hero reveal' id='top' style='--d:60ms'>
     <div class='container'>
-      <span class='subtitle'>.NET Developer | BE – Computer Science Engineering</span>
+      <span class='subtitle'> AI‑Enabled .NET Developer | BE – Computer Science Engineering</span>
       <br><br>
       <h1>Building reliable backends, APIs, and automation that deliver value.</h1>
 <br>
       <p class='summary'>
-        .NET Developer with ~3.4 years crafting scalable solutions across Healthcare and Airlines. Proficient in MS SQL, .NET Core, ASP.NET MVC, and ADO.NET with full‑stack experience in HTML, CSS, JavaScript, and jQuery. Strong collaborator and problem‑solver committed to quality and continuous improvement.
+        An AI‑Enabled .NET Developer with ~3.9 years crafting scalable solutions across Healthcare and Airlines. Proficient in MS SQL, .NET Core, ASP.NET MVC, and ADO.NET with full‑stack experience in HTML, CSS, JavaScript, and jQuery. Strong collaborator and problem‑solver committed to quality and continuous improvement.
       </p>
 <br>
       <div class='cta-row' role='group' aria-label='Primary actions'>
         <a class='btn' href='#experience'>✨ View Experience</a>
-        <a class='btn' href='Fiza-Resume.pdf' download>⬇️ Download Resume</a>
+        <a class='btn' href='Fiza_Dotnet.pdf' download>⬇️ Download Resume</a>
         <a class='btn secondary' href='https://linkedin.com/in/fiza-k-3453561a1' target='_blank' rel='noopener'>in LinkedIn</a>
       </div>
     </div>
@@ -156,7 +244,7 @@ form.contact .full{grid-column:1/-1}
     <div class='container'>
       <h2 class='section-title'>Professional Summary</h2>
       <div class='card'>
-        <p>.NET Developer with 3.4 years of experience building scalable and efficient solutions in the Healthcare and Airlines sectors. Proficient in MS SQL, .NET Core, ASP.NET MVC, and ADO.NET with hands‑on experience across front‑end and back‑end. Known for collaboration, adaptability, and delivering maintainable software aligned with stakeholder needs.</p>
+        <p> An AI‑Enabled .NET Developer with 3.9 years of experience building scalable and efficient solutions in the Healthcare and Airlines sectors. Proficient in MS SQL, .NET Core, ASP.NET MVC, Entity Framework and ADO.NET with hands‑on experience across front‑end and back‑end. Known for collaboration, adaptability, and delivering maintainable software aligned with stakeholder needs.</p>
       </div>
     </div>
   </section>
@@ -165,11 +253,11 @@ form.contact .full{grid-column:1/-1}
     <div class='container'>
       <h2 class='section-title'>Experience</h2>
       <div class='card'>
-        <h3>Software Engineer – GAVS Technologies</h3>
+        <h3>Software Engineer – Neurealm Private Limited (formerly GS Labs GAVS Technologies)</h3>
         <div class='meta'>03/2023 – Present · Chennai</div>
-        <p class='summary'>As a .NET Developer, designed and delivered scalable, secure, high‑performance applications across Healthcare and Airlines, blending strong backend skills with UI development to improve reliability, UX, and efficiency.</p>
+        <p class='summary'>As an AI‑Enabled .NET Developer, designed and delivered scalable, secure, high‑performance applications across Healthcare and Airlines, blending strong backend skills with UI development to improve reliability, UX, and efficiency.</p>
         <ul class='neon-icons'>
-          <li class='ic-backend'>Engineered robust .NET applications supporting core airline workflows using C#, .NET Core, ASP.NET MVC, ADO.NET, and SQL Server, ensuring performance and maintainability.</li>
+          <li class='ic-backend'>Engineered robust .NET applications supporting core airline workflows using C#, .NET Core, ASP.NET MVC, ADO.NET, Entity Framework and SQL Server, ensuring performance and maintainability.</li>
           <li class='ic-frontend'>Built and enhanced front‑end modules with HTML, CSS, JavaScript, and jQuery, elevating usability and aligning interfaces with business requirements.</li>
           <li class='ic-agile'>Collaborated with cross‑functional Agile teams—sprint planning, stand‑ups, backlog refinement, and code reviews—to deliver on time and at quality.</li>
           <li class='ic-techrec'>Provided technical recommendations that improved development practices and team velocity while supporting continuous improvement.</li>
@@ -195,9 +283,9 @@ form.contact .full{grid-column:1/-1}
         <div class='skill-group'><div class='skill-head'><span class='mini'>🧰</span> Databases & Tools</div><div class='pillset'><span class='pill'>Altair</span><span class='pill'>MS Office</span><span class='pill'>MS SQL</span><span class='pill'>MySQL</span><span class='pill'>Globalscape EFT</span><span class='pill'>Postman</span><span class='pill'>SoapUI</span><span class='pill'>Swagger</span><span class='pill'>ServiceNow</span><span class='pill'>WinSCP</span></div></div>
         <div class='skill-group'><div class='skill-head'><span class='mini'>🌐</span> Web Technologies</div><div class='pillset'><span class='pill'>HTML</span><span class='pill'>CSS</span><span class='pill'>JavaScript</span><span class='pill'>jQuery</span><span class='pill'>Razor Pages</span></div></div>
         <div class='skill-group'><div class='skill-head'><span class='mini'>🔐</span> Cryptography & Security Tools</div><div class='pillset'><span class='pill'>GPA</span><span class='pill'>GnuPG</span><span class='pill'>Kleopatra</span></div></div>
-        <div class='skill-group'><div class='skill-head'><span class='mini'>🛠️</span> Development Tools</div><div class='pillset'><span class='pill'>Visual Studio</span><span class='pill'>VS Code</span><span class='pill'>SQL Server Management Studio</span></div></div>
+        <div class='skill-group'><div class='skill-head'><span class='mini'>🛠️</span> Development Tools</div><div class='pillset'><span class='pill'>Visual Studio</span><span class='pill'>VS Code</span><span class='pill'>SQL Server Management Studio</span><span class='pill'>Jupiter Notebook</span><span class='pill'>Eclipse</span></div></div>
         <div class='skill-group'><div class='skill-head'><span class='mini'>📋</span> Project Tracking</div><div class='pillset'><span class='pill'>Azure DevOps</span><span class='pill'>Git (Version Control)</span><span class='pill'>JIRA</span></div></div>
-        <div class='skill-group'><div class='skill-head'><span class='mini'>🤖</span> AI Tools</div><div class='pillset'><span class='pill'>ChatGPT</span><span class='pill'>Gemini AI</span><span class='pill'>GitHub Copilot</span><span class='pill'>Grok AI</span><span class='pill'>Mermaid chart</span><span class='pill'>Perplexity</span></div></div>
+        <div class='skill-group'><div class='skill-head'><span class='mini'>🤖</span> AI Tools</div><div class='pillset'><span class='pill'>ChatGPT</span><span class='pill'>Gemini AI</span><span class='pill'>GitHub Copilot</span><span class='pill'>Grok AI</span><span class='pill'>Mermaid chart</span><span class='pill'>Perplexity</span><span class='pill'>Claude Sonnet</span></div></div>
         <div class='skill-group' style='grid-column:1/-1'>
           <div class='skill-head'><span class='mini'>🌟</span> Professional Strengths</div>
           <ul class='strengths'>
@@ -211,16 +299,45 @@ form.contact .full{grid-column:1/-1}
     </div>
   </section>
 
-  <section id='education' class='reveal' style='--d:140ms'>
-    <div class='container'>
-      <h2 class='section-title'>Education</h2>
-      <div class='grid'>
-        <div class='card'><h3>BE – Computer Science & Engineering</h3><div class='meta'>Dhaanish Ahmed College of Engineering · CGPA: 8.54 · 09/2018 – 08/2022</div></div>
-        <div class='card'><h3>HSC – Zion Matriculation Hr Sec School</h3><div class='meta'>86.9% · 05/2017 – 05/2018</div></div>
-        <div class='card'><h3>SSLC – Zion Matriculation Hr Sec School</h3><div class='meta'>96.8% · 05/2015 – 05/2016</div></div>
-      </div>
+
+<section id='education' class='reveal' style='--d:140ms'>
+  <div class='container'>
+    <h2 class='section-title'>Education</h2>
+
+    
+<div class='grid'>
+
+  <div class='card edu-card'>
+    <h3>BE – Computer Science & Engineering</h3>
+    <div class='meta'>Dhaanish Ahmed College · 2018 – 2022</div>
+
+    <div class='progress-circle' data-value='85.4'>
+      <span>0%</span>
     </div>
-  </section>
+  </div>
+
+  <div class='card edu-card'>
+    <h3>HSC</h3>
+    <div class='meta'>2017 – 2018</div>
+
+    <div class='progress-circle' data-value='86.9'>
+      <span>0%</span>
+    </div>
+  </div>
+
+  <div class='card edu-card'>
+    <h3>SSLC</h3>
+    <div class='meta'>2015 – 2016</div>
+
+    <div class='progress-circle' data-value='96.8'>
+      <span>0%</span>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+</section>
 
   <section id='certifications' class='reveal' style='--d:160ms'>
     <div class='container'>
@@ -237,23 +354,51 @@ form.contact .full{grid-column:1/-1}
     <div class='container'>
       <h2 class='section-title'>Achievements</h2>
       <div class='grid'>
-        <div class='card'><h3>Star of the Quarter</h3><div class='meta'>Recieved Star of Quarter Award for Q2 2023 & Q2 2024 @GS Lab GAVS Technologies</div></div>
+        <div class='card'><h3>Outstanding Performance Award</h3><div class='meta'>Received Outstanding Performance Award for Q1 2026 @Neurealm Private Limited</div></div>
+        <div class='card'><h3>Star of the Quarter</h3><div class='meta'>Received Star of Quarter Award for Q2 2023 & Q2 2024 @Neurealm Private Limited</div></div>
         <div class='card'><h3>International Workshop Participant</h3><div class='meta'>IoT & Ethical Hacking (Wikitechy & Microsoft Research Community Group) · Record IDs: WRHIOT - CH1576 & WRHIOT - CH536</div></div>
       </div>
     </div>
   </section>
 
-  <section id='languages' class='reveal' style='--d:200ms'>
-    <div class='container'>
-      <h2 class='section-title'>Languages</h2>
-      <div class='card'>
-        <li><span class='pill'>English — Full Professional</span></li><br>
-        <li><span class='pill'>Hindi — Native/Bilingual</span></li><br>
-        <li><span class='pill'>Tamil — Native/Bilingual</span></li><br>
-        <li><span class='pill'>Urdu — Native/Bilingual</span></li>
+ <section id='languages' class='reveal' style='--d:200ms'>
+  <div class='container'>
+    <h2 class='section-title'>Languages</h2>
+
+    <div class='card'>
+
+      <div class='lang-item'>
+        <p>English — Full Professional</p>
+        <div class='progress-bar'>
+          <div class='progress-value' data-value='95'><span>0%</span></div>
+        </div>
       </div>
+
+      <div class='lang-item'>
+        <p>Hindi — Native/Bilingual</p>
+        <div class='progress-bar'>
+          <div class='progress-value' data-value='100'><span>0%</span></div>
+        </div>
+      </div>
+
+      <div class='lang-item'>
+        <p>Tamil — Native/Bilingual</p>
+        <div class='progress-bar'>
+          <div class='progress-value' data-value='100'><span>0%</span></div>
+        </div>
+      </div>
+
+      <div class='lang-item'>
+        <p>Urdu — Native/Bilingual</p>
+        <div class='progress-bar'>
+          <div class='progress-value' data-value='100'><span>0%</span></div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <section id='contact' class='reveal' style='--d:220ms'>
     <div class='container'>
@@ -305,6 +450,29 @@ form.contact .full{grid-column:1/-1}
     window.toggleTheme=()=>{setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark');};
   })();
 
+// Language Progress Animation
+const languageBars = document.querySelectorAll(".progress-value");
+
+languageBars.forEach(bar => {
+  let value = bar.getAttribute("data-value");
+  let span = bar.querySelector("span");
+
+  let count = 0;
+
+  let interval = setInterval(() => {
+    count++;
+
+    if (count >= value) {
+      count = value;
+      clearInterval(interval);
+    }
+
+    bar.style.width = count + "%";
+    span.textContent = count + "%";
+
+  }, 20);
+});
+
   // Reveal on scroll
   const io = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target);} });
@@ -336,6 +504,62 @@ form.contact .full{grid-column:1/-1}
       }catch(err){ toast('Network error. Please try again.', false); }
     });
   }
+
+  
+// Education Loader Animation
+const eduLoaders = document.querySelectorAll('.edu-loader');
+
+eduLoaders.forEach(loader => {
+  const value = parseFloat(loader.getAttribute('data-value'));
+  const type = loader.getAttribute('data-type');
+
+  let count = 0;
+
+  const interval = setInterval(() => {
+    count += value / 50;
+
+    if (count >= value) {
+      count = value;
+      clearInterval(interval);
+    }
+
+    loader.textContent =
+      type === 'cgpa'
+        ? count.toFixed(2) + ' / 10'
+        : Math.round(count) + '%';
+
+  }, 20);
+
+  loader.classList.add('animate');
+});
+
+
+// Circular Progress Animation
+const circles = document.querySelectorAll(".progress-circle");
+
+circles.forEach(circle => {
+  let value = parseFloat(circle.getAttribute("data-value"));
+  let current = 0;
+  let span = circle.querySelector("span");
+
+  let interval = setInterval(() => {
+    current += value / 50;
+
+    if (current >= value) {
+      current = value;
+      clearInterval(interval);
+    }
+
+    circle.style.background = `conic-gradient(
+      var(--accent) ${current * 3.6}deg,
+      rgba(255,255,255,0.1) 0deg
+    )`;
+
+    span.textContent = Math.round(current) + "%";
+  }, 20);
+});
+
+
 </script>
 
 </body>
